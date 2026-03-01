@@ -4,7 +4,7 @@
     "description": "Airbnb clone",
     "scripts": {
         "start": "cd backend && node server.js",
-        "heroku-postbuild": "npm install --prefix backend && cd frontend && npm install && npm run build"
+        "heroku-postbuild": "npm install --prefix backend && cd frontend && npm install --include=dev && npm run build"
     },
     "engines": {
         "node": "20.x"
